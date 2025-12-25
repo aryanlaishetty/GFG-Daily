@@ -1,2 +1,2 @@
 # GFG Daily
-Consistently solving at least one Data Structures and Algorithms problem every day to strengthen problem-solving skills. This repository documents my daily progress, solutions, and learning journey.
+Daily practice of Data Structures and Algorithms to improve problem-solving skills. This repository logs my progress and solutions from GeeksforGeeks.
