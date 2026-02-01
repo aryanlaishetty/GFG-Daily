@@ -1,5 +1,8 @@
 class Solution {
   public:
+    //Optimal - 2 pointer approach
+    //tc = O(n1 + n2)
+    //sc = O(n1 + n2)
     vector<int> findUnion(vector<int> &a, vector<int> &b) {
         // code here
         int n1 = a.size(), n2 = b.size();
