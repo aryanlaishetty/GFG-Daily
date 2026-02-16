@@ -1,17 +1,21 @@
 class Solution {
   public:
+    //Optimal Approach using two pointers
+    //tc = O(n) + O(nlogn)
+    //sc = O(1)
     bool twoSum(vector<int>& arr, int target) {
         // code here
-        unordered_map<int, int> m;  //<arr[i], i>
+        sort(arr.begin(), arr.end());
+        int left=0, right=arr.size()-1;
         
-        for(int i=0; i<arr.size(); i++) {
-            int compliment = target - arr[i];
-            
-            if(m.count(compliment)) {
+        while(left < right) {
+            if(arr[left] + arr[right] == target) {
                 return true;
+            } else if(arr[left] + arr[right] > target) {
+                right--;    //sum decreases
+            } else {    //sum < target
+                left++; //sum increases
             }
-            
-            m[arr[i]] = i;
         }
         
         return false;
